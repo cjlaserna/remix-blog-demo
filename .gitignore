@@ -1,0 +1,12 @@
+.DS_Store
+
+node_modules
+
+/.cache
+/build
+/public/build
+.env
+
+/netlify/functions/server/build
+/public/build
+/.netlify
