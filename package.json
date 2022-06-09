@@ -1,34 +1,46 @@
 {
-  "name": "datocms-remix-example",
-  "description": "Example template for Remix and DatoCMS",
-  "license": "MIT",
-  "scripts": {
-    "build": "remix build",
-    "dev": "node -r dotenv/config node_modules/.bin/remix dev",
-    "postinstall": "remix setup node",
-    "netlifydev": "cross-env NODE_ENV=development netlify dev",
-    "start": "remix-serve build"
-  },
-  "dependencies": {
-    "@remix-run/netlify": "^1.1.1",
-    "@remix-run/react": "^1.1.1",
-    "@remix-run/serve": "^1.1.1",
-    "@remix-run/vercel": "^1.1.1",
-    "date-fns": "^2.28.0",
-    "dotenv": "^14.1.0",
-    "react": "^17.0.2",
-    "react-datocms": "^2.1.2",
-    "react-dom": "^17.0.2",
-    "remix": "^1.1.1",
-    "tiny-invariant": "^1.2.0",
-    "tiny-json-http": "^7.3.1"
-  },
-  "devDependencies": {
-    "@remix-run/dev": "^1.1.1",
-    "cross-env": "^7.0.3"
-  },
-  "engines": {
-    "node": ">=14"
-  },
-  "sideEffects": false
+	"name": "datocms-remix-example",
+	"description": "Example template for Remix and DatoCMS",
+	"license": "MIT",
+	"scripts": {
+		"build": "npm run build:css && remix build",
+		"build:css": "tailwindcss -o ./app/tailwind.css",
+		"dev": "concurrently \"npm run dev:css\" \"remix dev\"",
+		"dev:css": "tailwindcss -o ./app/tailwind.css --watch",
+		"postinstall": "remix setup node",
+		"netlifydev": "cross-env NODE_ENV=development netlify dev",
+		"start": "remix-serve build"
+	},
+	"dependencies": {
+		"@remix-run/netlify": "^1.1.1",
+		"@remix-run/node": "^1.5.1",
+		"@remix-run/react": "^1.1.1",
+		"@remix-run/serve": "^1.1.1",
+		"@remix-run/vercel": "^1.1.1",
+		"@tailwindcss/line-clamp": "^0.4.0",
+		"bootstrap-icons": "^1.8.3",
+		"concurrently": "^7.2.1",
+		"daisyui": "^2.15.2",
+		"date-fns": "^2.28.0",
+		"dotenv": "^14.3.2",
+		"emailjs-com": "^3.2.0",
+		"perfect-scrollbar": "^1.5.5",
+		"react": "^17.0.2",
+		"react-datocms": "^2.1.2",
+		"react-dom": "^17.0.2",
+		"remix": "^1.1.1",
+		"tailwind-override": "^0.6.1",
+		"tiny-invariant": "^1.2.0",
+		"tiny-json-http": "^7.3.1",
+		"vertical-timeline-component-react": "^3.0.3"
+	},
+	"devDependencies": {
+		"@remix-run/dev": "^1.1.1",
+		"cross-env": "^7.0.3",
+		"tailwindcss": "^3.0.24"
+	},
+	"engines": {
+		"node": ">=14"
+	},
+	"sideEffects": false
 }
