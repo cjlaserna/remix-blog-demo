@@ -12,7 +12,7 @@ import Contact from "../components/Contact/Contact";
 import { json } from "remix";
 
 export function links() {
-	return [...avatarLinks(), { rel: "stylesheet", href: styles }];
+	return [{ rel: "stylesheet", href: styles }];
 }
 
 export const loader = async ({ request }) => {

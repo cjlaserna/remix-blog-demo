@@ -1,0 +1,8 @@
+.navbar {
+	display: none;
+}
+@media print {
+	.instructions {
+		display: none;
+	}
+}

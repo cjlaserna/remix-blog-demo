@@ -9,4 +9,5 @@ node_modules
 
 /netlify/functions/server/build
 /public/build
+/public/gh-pages
 /.netlify
