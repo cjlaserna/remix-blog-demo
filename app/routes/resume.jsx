@@ -170,18 +170,16 @@ export default function Index() {
 				<h2 className="text-lg font-bold text-center">Education</h2>
 				{education.map((edu, index) => {
 					return (
-						<>
-							<div className="my-3">
-								<p className="text-md font-bold">
-									{edu.school} {edu.gpa ? `- GPA: ${edu.gpa}` : ""}
-								</p>
-								<time className="mb-1 text-sm font-normal leading-none text-secondary-content">
-									{formatDate(edu.start)}
-									{edu.end ? ` - ${formatDate(edu.end)}` : ""}
-								</time>
-								{edu.additional ? <p>{edu.additional}</p> : ""}
-							</div>
-						</>
+						<div className="my-3 page-break-after">
+							<p className="text-md font-bold">
+								{edu.school} {edu.gpa ? `- GPA: ${edu.gpa}` : ""}
+							</p>
+							<time className="mb-1 text-sm font-normal leading-none text-secondary-content">
+								{formatDate(edu.start)}
+								{edu.end ? ` - ${formatDate(edu.end)}` : ""}
+							</time>
+							{edu.additional ? <p>{edu.additional}</p> : ""}
+						</div>
 					);
 				})}
 			</div>
@@ -189,22 +187,20 @@ export default function Index() {
 				<h2 className="text-lg font-bold text-center">Job Experiences</h2>
 				{jobs.map((job, index) => {
 					return (
-						<>
-							<div className="my-3">
-								<p className="text-md font-bold">
-									{job.company} - {job.job}
-								</p>
-								<time className="mb-1 text-sm font-normal leading-none text-secondary-content">
-									{formatDate(job.startDate)}
-									{job.jobEndDate
-										? ` - ${formatDate(job.jobEndDate)}`
-										: job.stillEmployedHere
-										? " - Present"
-										: ""}
-								</time>
-								<p>{job.jobDescription}</p>
-							</div>
-						</>
+						<div className="my-3 page-break-after">
+							<p className="text-md font-bold">
+								{job.company} - {job.job}
+							</p>
+							<time className="mb-1 text-sm font-normal leading-none text-secondary-content">
+								{formatDate(job.startDate)}
+								{job.jobEndDate
+									? ` - ${formatDate(job.jobEndDate)}`
+									: job.stillEmployedHere
+									? " - Present"
+									: ""}
+							</time>
+							<p>{job.jobDescription}</p>
+						</div>
 					);
 				})}
 			</div>
@@ -212,20 +208,18 @@ export default function Index() {
 				<h2 className="text-lg font-bold text-center">Activities</h2>
 				{activities.map((activity, index) => {
 					return (
-						<>
-							<div className="my-3">
-								<p className="text-md font-bold">{activity.activity} </p>
-								<time className="mb-1 text-sm font-normal leading-none text-secondary-content">
-									{formatDate(activity.start)}
-									{activity.end ? ` - ${formatDate(activity.end)}` : ""}
-								</time>
-								{activity.description ? <p>{activity.description}</p> : ""}
-							</div>
-						</>
+						<div className="my-3 page-break-after">
+							<p className="text-md font-bold">{activity.activity} </p>
+							<time className="mb-1 text-sm font-normal leading-none text-secondary-content">
+								{formatDate(activity.start)}
+								{activity.end ? ` - ${formatDate(activity.end)}` : ""}
+							</time>
+							{activity.description ? <p>{activity.description}</p> : ""}
+						</div>
 					);
 				})}
 			</div>
-			<div>
+			<div className="page-break-after">
 				<h2 className="text-lg font-bold text-center">Skills</h2>
 				<div className="w-full">
 					<div>

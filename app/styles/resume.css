@@ -5,4 +5,7 @@
 	.instructions {
 		display: none;
 	}
+	.page-break-after {
+		page-break-inside: avoid;
+	}
 }
