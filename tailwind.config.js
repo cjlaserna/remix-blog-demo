@@ -36,7 +36,7 @@ module.exports = {
 					success: "#56949f",
 					warning: "#ea9d34",
 					error: "#d7827e",
-					"primary-content": "#2d2076",
+					"primary-content": "#343434",
 				},
 			},
 			{

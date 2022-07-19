@@ -266,10 +266,10 @@ export default function Index() {
 					</p>
 					<div className="collapse collapse-arrow bg-base-100 rounded-box lg:right-4 w-full z-50 lg:absolute lg:w-1/4">
 						<input type="checkbox" className="peer" aria-label="filter" />
-						<div className="collapse-title bg-primary text-secondary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+						<div className="collapse-title bg-neutral text-secondary-content peer-checked:bg-neutral peer-checked:text-secondary-content">
 							Filter
 						</div>
-						<div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+						<div className="collapse-content bg-neutral text-primary-content peer-checked:bg-neutral peer-checked:text-secondary-content">
 							<div className="w-full">
 								<div className="form-control">
 									<label className="label cursor-pointer hover:bg-neutral">
