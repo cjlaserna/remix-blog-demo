@@ -2,6 +2,16 @@ module.exports = {
 	content: ["./app/**/*.{ts,tsx,jsx,js}"],
 	theme: {
 		darkMode: "class",
+		screens: {
+			sm: "640px",
+			// => @media (min-width: 640px) { ... }
+
+			md: "1024px",
+			// => @media (min-width: 1024px) { ... }
+
+			lg: "1280px",
+			// => @media (min-width: 1280px) { ... }
+		},
 		extend: {
 			gridTemplateColumns: {
 				"auto-fill": "repeat(auto-fill, minmax(0, 1fr))",
@@ -19,13 +29,14 @@ module.exports = {
 				rosepinedawn: {
 					primary: "#dfdad9",
 					secondary: "#cecacd",
-					accent: "#9893a5",
-					neutral: "#f4ede8",
-					"base-100": "#faf4ed",
+					accent: "#2d2076",
+					neutral: "#EDEDED",
+					"base-100": "#fff",
 					info: "#286983",
 					success: "#56949f",
 					warning: "#ea9d34",
 					error: "#d7827e",
+					"primary-content": "#2d2076",
 				},
 			},
 			{

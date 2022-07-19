@@ -145,7 +145,7 @@ export default function Index() {
 	}
 
 	return (
-		<div className="container">
+		<div className="container" contenteditable="true">
 			<div className="instructions p-5 my-2 w-full bg-neutral rounded">
 				<Link to="/">
 					<button class="btn mr-5 bg-primary hover:bg-primary-focus ">
