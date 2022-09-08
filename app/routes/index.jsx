@@ -33,7 +33,7 @@ export const loader = async ({ request }) => {
 			}
 			experiences: allExperiences(orderBy: startDate_DESC) {
 				job
-				jobDescription
+				jobDescription(markdown: true)
 				jobEndDate
 				startDate
 				stillEmployedHere
@@ -216,9 +216,12 @@ export default function Index() {
 										<h3 className="text-2xl font-semibold text-primary-content">
 											{job.company} - {job.job}
 										</h3>
-										<p className="mb-4 text-base font-normal text-primary-content">
-											{job.jobDescription}
-										</p>
+										<div
+											className="mb-4 text-base font-normal text-primary-content jobDescription"
+											dangerouslySetInnerHTML={{
+												__html: job.jobDescription,
+											}}
+										></div>
 									</li>
 							  ))
 							: ""}
@@ -360,28 +363,30 @@ export default function Index() {
 				/>
 			</section>
 			<section className="footer mt-10 ">
-				<footer class="footer footer-center p-10 text-base-content">
-					<div class="grid grid-flow-col gap-4">
-						<a class="link link-hover" href="#experiences">
+				<footer className="footer footer-center p-10 text-base-content">
+					<div className="grid grid-flow-col gap-4">
+						<a className="link link-hover" href="#experiences">
 							Experiences
 						</a>
-						<a class="link link-hover" href="#projects">
+						<a className="link link-hover" href="#projects">
 							Projects
 						</a>
-						<a class="link link-hover" href="#skills">
+						<a className="link link-hover" href="#skills">
 							Skills
 						</a>
-						<a class="link link-hover" href="#contact">
+						<a className="link link-hover" href="#contact">
 							Contact
 						</a>
 					</div>
 					<div>
-						<div class="grid grid-flow-col gap-4">
+						<div className="grid grid-flow-col gap-4">
 							{socials
 								? socials.map((social, index) => {
 										return (
 											<a href={social.link}>
-												<i class={`fa fa-${social.faIcon.toLowerCase()}`}></i>
+												<i
+													className={`fa fa-${social.faIcon.toLowerCase()}`}
+												></i>
 											</a>
 										);
 								  })

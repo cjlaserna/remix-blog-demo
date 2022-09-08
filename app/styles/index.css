@@ -21,3 +21,8 @@
 	clear: both;
 	display: block;
 }
+
+.jobDescription ul li {
+	list-style-type: "- ";
+	list-style-position: inside;
+}
