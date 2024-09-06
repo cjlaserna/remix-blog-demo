@@ -2,20 +2,19 @@ import Navigation from "../content/Navigation";
 import CardComponent from "../component/js/CardComponent";
 import data from "../content/data";
 
-const Experiences = () => {
-  const experienceData = data.experiences;
+const Projects = () => {
+  const projectData = data.projects;
   return (
     <>
-      <header className="header"></header>
-      <main className="main-content grid grid-cols-1 gap-10 md:grid-cols-2">
-        {experienceData.map((experience) => (
+      <main className="main-content grid grid-cols-1 gap-10 md:grid-cols-2 h-full">
+        {projectData.map((project) => (
           <CardComponent
-            key={experience.title}
-            title={experience.title}
-            imageSrc={experience.imgSrc}
-            desc={experience.desc}
-            src={experience.src}
-            langs={experience.langs}
+            key={project.title}
+            title={project.title}
+            imageSrc={project.imgSrc}
+            desc={project.desc}
+            src={project.src}
+            langs={project.langs}
           />
         ))}
         <div className="figure-wrapper">
@@ -29,4 +28,4 @@ const Experiences = () => {
   );
 };
 
-export default Experiences;
+export default Projects;

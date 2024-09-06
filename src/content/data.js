@@ -1,67 +1,145 @@
 const data = {
-	user: {
-		name: "Catherine Laserna",
-		affiliation: "CSU Fresno",
-		expectedGradYear: 2026,
-		discipline: "Computer Science",
-	},
-	characterDescription:
-		"Hello! The purpose of this site is to go in detail about my meaningful experiences/projects and get to know me beyond my resume. My resume is still available for download below, but I didn't want this to be a mere retelling of what it already has. I'm Catherine, I'm obsessed with anything video games and tech! I'm committed to bringing my interests to underserved communities and becoming a software engineer. My dream company is Riot Games :)",
-	programmingLanguages: ["Python", "Javascript", "Typescript", "C++", "C#"],
-	courses: {
-		past: ["Intro.Programming", "Intro.DSA", "Intro.SWE", "Disc. Math"],
-		current: ["Simulation", "DSA", "Fin. Automata"],
-	},
-	experiences: [
-		{
-			title: "NookOffice",
-			imgSrc: "https://i.ibb.co/HrFZwSJ/timerprev.png",
-			desc: "NookOffice was an Animal Crossing themed productivity site I made that had hourly-rotating Animal Crossing Music, to-do list, and a timer! It had peaked at 5k users, AUG 2023! But I couldn't pay anymore for the domain/server.",
-			langs: ["Astro", "JS", "YTEmbedAPI"],
-			src: "https://github.com/cjlaserna/nookoffice",
-		},
-		{
-			title: "Teyvat Travel Notes",
-			imgSrc: "https://i.ibb.co/nzPYyvY/teyvatnotes.gif",
-			desc: "Teyvat Travel Notes is a Genshin Impact themed to-do list for Genshin players! It has folders, Genshin icons, emotes, and characters. I made it for fun over winter break while I was obsessed with Genshin!",
-			langs: ["Next", "Typescript", "JS"],
-			src: "https://teyvat-travel-notes.vercel.app/",
-		},
-		{
-			title: "ACF Coaching",
-			imgSrc:
-				"https://i.ibb.co/k2PYcws/364975347-2050546588633362-1730203568416576462-n.jpg",
-			desc: "I was an ACF coach for a couple months. I hosted and helped organize a Game Jam for ACF students. I also lived on my own and worked for them over the summer. I got to impact many young lives through ACF.",
-			langs: ["Python", "Lego"],
-			src: "https://www.applied-computing.org/",
-		},
-		{
-			title: "School Clubs",
-			imgSrc: "https://i.ibb.co/80FVTDm/mainpage.png",
-			desc: "I was part of the CSCI/GDSC Club. It felt great to network and reach out to speakers, even greater to give back to my community. Moreover, watching GDSC x GDG Dev Fest unfold as GDSC VP was amazing.",
-			src: "https://gdsc.community.dev/california-state-university-fresno/",
-		},
-		{
-			title: "TTV Streaming",
-			imgSrc: "https://i.ibb.co/CbF5rSS/ttv.png",
-			desc: "I was consistently streaming my coding projects on Twitch. I peaked at over 500 live viewers! It fun experience and I met a lot of interesting people through streaming. I hope to get back into this hobby again sometime.",
-			src: "https://www.twitch.tv/bubbaguppylive/about",
-		},
-	],
-	achievements: [
-		{
-			title: "Smittcamp Honors",
-			imgSrc: "https://i.ibb.co/Ytd9Frf/fsn-smittcamp.jpg",
-			desc: "I am extremely grateful having received this scholarship. Going into college I had an EFC score of 0 from FAFSA. Thanks to this scholarship a lot of financial burden had been taken off of my shoulders.",
-			src: "https://academics.fresnostate.edu/honors/",
-		},
-		{
-			title: "Google Gen. WIG",
-			imgSrc: "https://i.ibb.co/9ZybZmX/maxresdefault-11.jpg",
-			desc: "I won Google's Generation Scholarship for Women In Gaming shortly after accepting Fresno State. This scholarship would've drastically changed where I went had I known earlier. It was an amazing scholarship!",
-			src: "https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship",
-		},
-	],
+  user: {
+    name: "Catherine Laserna",
+    affiliation: "CSU Fresno",
+    expectedGradYear: 2026,
+    discipline: "Cognitive Science",
+    minor: "Media Arts",
+  },
+  characterDescription:
+    'When my family immigrated to the US, it was difficult to get used to the language, culture, and new peers. In a world of all things foreign, I quickly took comfort in playing and socializing through video games. The shutdown of my childhood video game is the strange reason I started programming and dabbling in design in the first place. When I was 11, I programmed my first unusable, hot pink recreation of a discontinued "Pixie Hollow" (Disney MMORPG). There\'s no doubt that gaming has shaped who I am today and I am determined to break into the industry.',
+  programmingLanguages: ["Python", "Javascript", "Typescript", "C++", "C#"],
+  courses: {
+    past: ["Intro.Programming", "DSA", "Intro.SWE", "Disc. Math"],
+    current: ["Graphic Design", "ELVTR UI/UX in Gaming"],
+  },
+  skills: [
+    "Figma",
+    "Bezi",
+    "Illustrator",
+    "Photoshop",
+    "Pygame",
+    "Unity C#",
+    "Typescipt",
+  ],
+  projects: [
+    {
+      title: "Stardew Valley Case Study",
+      imgSrc: "/assets/photos/stardew.png",
+      desc: "With over 500 hours spent playing this game, come read some of my gripes and view how I improved the save creation and tutorial scenes in-game.",
+      langs: ["Figma", "Figjam"],
+      src: "https://www.linkedin.com/pulse/stardew-valley-ux-case-study-catherine-laserna-m9vpc?trackingId=81bjUZjQSe28d%2B80Exb0fg%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BIpXGzoOZQJuPHEUQ1dDHzw%3D%3D",
+    },
+    {
+      title: "Cloud UI Pack",
+      imgSrc: "/assets/photos/cloud_ui.png",
+      desc: "The Cloud UI Pack is a collection of UI Elements for pixelated games, inspired by Cinamoroll.",
+      langs: ["Aseprite"],
+      src: "https://cjlaserna.itch.io/cloud-ui-pack",
+    },
+    {
+      title: "NookOffice",
+      imgSrc: "/assets/photos/timerprev.png",
+      desc: "NookOffice was an Animal Crossing themed productivity site and widget. It had hourly-rotating music, to-do lists, and timers! It had peaked at 5k users 2023, but I couldn't pay anymore for the domain/server.",
+      langs: ["Astro", "JS", "YTEmbedAPI"],
+      src: "https://github.com/cjlaserna/nookoffice",
+    },
+    {
+      title: "Teyvat Travel Notes",
+      imgSrc: "/assets/photos/teyvatnotes.gif",
+      desc: "Teyvat Travel Notes is a Genshin Impact themed to-do list for Genshin players! It has folders, Genshin icons, emotes, and characters. I made it for fun over winter break while I was obsessed with Genshin!",
+      langs: ["Next", "Typescript", "JS"],
+      src: "https://teyvat-travel-notes.vercel.app/",
+    },
+    {
+      title: "Seasoned Seniors",
+      imgSrc: "/assets/photos/seasoned_seniors.png",
+      desc: "Seasoned Seniors is a culinary game I've been working on for a bit. A majority of assets are CC0, created by me, or modified to fit the game. It is still in development but it can be previewed.",
+      langs: ["Unity", "C#", "Aseprite"],
+      src: "https://cjlaserna.itch.io/seasoned-seniors",
+    },
+    {
+      title: "Love Luster UI",
+      imgSrc: "/assets/photos/love_luster.png",
+      desc: "The Love Luster UI pack is a collection of UI Elements for your dating sims and visual novels. There's different screens and color variations.",
+      langs: ["Figma", "Illustrator"],
+      src: "https://cjlaserna.itch.io/love-luster-ui-pack",
+    },
+    {
+      title: "Twitch Overlays",
+      imgSrc: "/assets/photos/twitch_covers.png",
+      desc: "A collection of Twitch overlays I've made and put out in the past.",
+      langs: ["Figma"],
+      src: "https://rentry.co/no8cb6ad",
+    },
+  ],
+  experiences: [
+    {
+      title: "ACF Coaching",
+      imgSrc: "/assets/photos/acf.jpg",
+      desc: "I was an ACF coach for a couple months. I hosted and helped organize a Game Jam for ACF students. I also lived on my own and worked for them over the summer. I got to impact many young lives through ACF.",
+      langs: ["PyGame", "Lego"],
+      src: "https://www.applied-computing.org/",
+    },
+    {
+      title: "Mobalytics Research",
+      imgSrc: "/assets/photos/mobalytics.jpg",
+      desc: "I did my Mobalytics externship research on Genshin Impact / Honkai SR! I remember using Mobalytics for League of Legends runes. Never would've thought I'd get to present to one of the founders!",
+      langs: ["Figma", "Secondary Research"],
+      src: "https://www.linkedin.com/pulse/exploring-player-perspectives-my-mobalytics-catherine-laserna-cnvxc/",
+    },
+    {
+      title: "1000DreamsFund",
+      imgSrc: "/assets/photos/1df.png",
+      desc: "I've been involved with 1000DreamsFund, a non-profit supporting women in STEM and games, for a while now! Although I'm no longer in their advisory board or an intern, I still keep up with events/newsletters.",
+      langs: ["Communication", "Time Management"],
+      src: "https://1000dreamsfund.org/success/catherine-18-funded/",
+    },
+    {
+      title: "School Clubs",
+      imgSrc: "https://i.ibb.co/80FVTDm/mainpage.png",
+      langs: ["Communication", "Time Management"],
+      desc: "I am part of the CSCI/GDSC Club. It felt great to network and reach out to speakers, even greater to give back to my community. Moreover, watching GDSC x GDG Dev Fest unfold as GDSC VP was amazing.",
+      src: "https://engage.fresnostate.edu/actioncenter/organization/gdsc-csuf/about",
+    },
+    {
+      title: "TTV Streaming",
+      imgSrc: "https://i.ibb.co/CbF5rSS/ttv.png",
+      desc: "I was consistently streaming my coding projects on Twitch. I peaked at over 500 live viewers!",
+      src: "https://www.twitch.tv/bubbaguppylive/about",
+    },
+  ],
+  achievements: [
+    {
+      title: "Smittcamp Honors",
+      imgSrc: "/assets/photos/smittcamp.jpg",
+      desc: "I am extremely grateful having received this scholarship. Going into college I had an EFC score of 0 from FAFSA. Thanks to this scholarship a lot of financial burden had been taken off of my shoulders.",
+      src: "https://academics.fresnostate.edu/honors/",
+    },
+    {
+      title: "Google Gen. WIG",
+      imgSrc: "/assets/photos/googlegen.jpg",
+      desc: "I won Google's Generation Scholarship for Women In Gaming shortly after accepting Fresno State. This scholarship would've drastically changed where I went had I known earlier. It was an amazing scholarship!",
+      src: "https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship",
+    },
+  ],
+  sidequests: {
+    usernames: "Poyo / Guppy",
+    titles: [
+      "Crossword Addict",
+      "Hardstuck Silver",
+      "Cozy Gamer",
+      "Papa's Cheeseria Expert",
+      "Old Web Enjoyer",
+    ],
+    achievements: [
+      "Perfected Stardew Valley",
+      "Genocide Ending in YanSim",
+      "Obtain a Riot Gun Buddy",
+      "Stream to 500 live viewers",
+      "Run old Windows on the Wii",
+    ],
+  },
 };
 
 export default data;
