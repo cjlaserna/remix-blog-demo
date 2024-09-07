@@ -80,7 +80,7 @@ a,
 	overflow-wrap: break-word;
 	z-index: 1;
 	width: 1150px;
-	min-height: 75vh;
+	height: 80vh;
 	/* opacity: 0.8; */
 }
 .holy-grail-modal {
@@ -142,10 +142,10 @@ a,
 	border-bottom: none;
 }
 /* desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1250px) {
 	.holy-grail-grid {
 		margin-top: 0vh;
-		height: 70vh;
+		height: 80vh;
 		margin-left: 15%;
 		margin-right: 15%;
 		grid-template-areas:
